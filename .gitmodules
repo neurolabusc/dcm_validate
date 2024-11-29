@@ -1,0 +1,12 @@
+[submodule "dcm_qa"]
+	path = dcm_qa
+	url = git@github.com:neurolabusc/dcm_qa.git
+[submodule "dcm_qa_12bit"]
+	path = dcm_qa_12bit
+	url = git@github.com:neurolabusc/dcm_qa_12bit.git
+[submodule "dcm_qa_agfa"]
+	path = dcm_qa_agfa
+	url = git@github.com:neurolabusc/dcm_qa_agfa.git
+[submodule "dcm_qa_asl"]
+	path = dcm_qa_asl
+	url = git@github.com:neurolabusc/dcm_qa_asl.git
