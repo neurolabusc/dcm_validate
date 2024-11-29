@@ -13,7 +13,9 @@ cd dcm_validate
 
 ```
 
+## Catalog
 
+Below is a comprehensive list of the included repositories. The Manufacturer refers to Canon (C), General Electric (G), Philips (P), Siemens (S), and United Imaging Healthcare (U).
 
 | Repository Name                                                             | Manufacturer   | Comments                                                                  |
 |-----------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
