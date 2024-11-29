@@ -10,3 +10,99 @@
 [submodule "dcm_qa_asl"]
 	path = dcm_qa_asl
 	url = git@github.com:neurolabusc/dcm_qa_asl.git
+[submodule "dcm_qa_canon"]
+	path = dcm_qa_canon
+	url = git@github.com:neurolabusc/dcm_qa_canon.git
+[submodule "dcm_qa_canon_61"]
+	path = dcm_qa_canon_61
+	url = git@github.com:neurolabusc/dcm_qa_canon_61.git
+[submodule "dcm_qa_canon_enh"]
+	path = dcm_qa_canon_enh
+	url = git@github.com:neurolabusc/dcm_qa_canon_enh.git
+[submodule "dcm_qa_cs_dl"]
+	path = dcm_qa_cs_dl
+	url = git@github.com:neurolabusc/dcm_qa_cs_dl.git
+[submodule "dcm_qa_ct"]
+	path = dcm_qa_ct
+	url = git@github.com:neurolabusc/dcm_qa_ct.git
+[submodule "dcm_qa_decubitus"]
+	path = dcm_qa_decubitus
+	url = git@github.com:neurolabusc/dcm_qa_decubitus.git
+[submodule "dcm_qa_decubitus_ge"]
+	path = dcm_qa_decubitus_ge
+	url = git@github.com:neurolabusc/dcm_qa_decubitus_ge.git
+[submodule "dcm_qa_deident"]
+	path = dcm_qa_deident
+	url = git@github.com:neurolabusc/dcm_qa_deident.git
+[submodule "dcm_qa_dti"]
+	path = dcm_qa_dti
+	url = git@github.com:neurolabusc/dcm_qa_dti.git
+[submodule "dcm_qa_enh"]
+	path = dcm_qa_enh
+	url = git@github.com:neurolabusc/dcm_qa_enh.git
+[submodule "dcm_qa_fmap"]
+	path = dcm_qa_fmap
+	url = git@github.com:neurolabusc/dcm_qa_fmap.git
+[submodule "dcm_qa_ge"]
+	path = dcm_qa_ge
+	url = git@github.com:neurolabusc/dcm_qa_ge.git
+[submodule "dcm_qa_me"]
+	path = dcm_qa_me
+	url = git@github.com:neurolabusc/dcm_qa_me.git
+[submodule "dcm_qa_mosaic"]
+	path = dcm_qa_mosaic
+	url = git@github.com:neurolabusc/dcm_qa_mosaic.git
+[submodule "dcm_qa_mprage"]
+	path = dcm_qa_mprage
+	url = git@github.com:neurolabusc/dcm_qa_mprage.git
+[submodule "dcm_qa_nih"]
+	path = dcm_qa_nih
+	url = git@github.com:neurolabusc/dcm_qa_nih.git
+[submodule "dcm_qa_pdt2"]
+	path = dcm_qa_pdt2
+	url = git@github.com:neurolabusc/dcm_qa_pdt2.git
+[submodule "dcm_qa_philips"]
+	path = dcm_qa_philips
+	url = git@github.com:neurolabusc/dcm_qa_philips.git
+[submodule "dcm_qa_philips_asl"]
+	path = dcm_qa_philips_asl
+	url = git@github.com:neurolabusc/dcm_qa_philips_asl.git
+[submodule "dcm_qa_philips_asl_enh"]
+	path = dcm_qa_philips_asl_enh
+	url = git@github.com:neurolabusc/dcm_qa_philips_asl_enh.git
+[submodule "dcm_qa_philips_dwi"]
+	path = dcm_qa_philips_dwi
+	url = git@github.com:neurolabusc/dcm_qa_philips_dwi.git
+[submodule "dcm_qa_philips_enh"]
+	path = dcm_qa_philips_enh
+	url = git@github.com:neurolabusc/dcm_qa_philips_enh.git
+[submodule "dcm_qa_polar"]
+	path = dcm_qa_polar
+	url = git@github.com:neurolabusc/dcm_qa_polar.git
+[submodule "dcm_qa_sag"]
+	path = dcm_qa_sag
+	url = git@github.com:neurolabusc/dcm_qa_sag.git
+[submodule "dcm_qa_stc"]
+	path = dcm_qa_stc
+	url = git@github.com:neurolabusc/dcm_qa_stc.git
+[submodule "dcm_qa_table"]
+	path = dcm_qa_table
+	url = git@github.com:neurolabusc/dcm_qa_table.git
+[submodule "dcm_qa_toshiba"]
+	path = dcm_qa_toshiba
+	url = git@github.com:neurolabusc/dcm_qa_toshiba.git
+[submodule "dcm_qa_trt"]
+	path = dcm_qa_trt
+	url = git@github.com:neurolabusc/dcm_qa_trt.git
+[submodule "dcm_qa_ts"]
+	path = dcm_qa_ts
+	url = git@github.com:neurolabusc/dcm_qa_ts.git
+[submodule "dcm_qa_uih"]
+	path = dcm_qa_uih
+	url = git@github.com:neurolabusc/dcm_qa_uih.git
+[submodule "dcm_qa_xa30"]
+	path = dcm_qa_xa30
+	url = git@github.com:neurolabusc/dcm_qa_xa30.git
+[submodule "dcm_qa_xa30i"]
+	path = dcm_qa_xa30i
+	url = git@github.com:neurolabusc/dcm_qa_xa30i.git
