@@ -1,5 +1,18 @@
 # dcm_validate
-A directory with the entire collection of dcm_qa repositories
+
+The `dcm_validate` repository serves as a centralized collection of all `dcm_qa` repositories. Each `dcm_qa` repository provides concise, illustrative examples of specific DICOM image file features. This repository acts as an index, bringing together these independent modules for easier access and management.
+
+## Installation
+
+To clone this repository and initialize all submodules, use the following commands:
+
+```bash
+git submodule update --init --recursive
+git clone git@github.com:neurolabusc/dcm_validate.git
+cd dcm_validate
+
+```
+
 
 
 | Repository Name                                                             | Manufacturer   | Comments                                                                  |
@@ -40,3 +53,5 @@ A directory with the entire collection of dcm_qa repositories
 | [`dcm_qa_uih`](https://github.com/neurolabusc/dcm_qa_uih)                   | U              | United Imaging Healthcare ("UIH") MRI scanners                            |
 | [`dcm_qa_xa30`](https://github.com/neurolabusc/dcm_qa_xa30)                 | S              | Siemens XA30 enhanced DICOMs                                              |
 | [`dcm_qa_xa30i`](https://github.com/neurolabusc/dcm_qa_xa30i)               | S              | Siemens XA30 classic (interoperability) DICOM                             |
+
+
