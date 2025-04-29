@@ -10,7 +10,17 @@ To clone this repository and initialize all submodules, use the following comman
 git submodule update --init --recursive
 git clone git@github.com:neurolabusc/dcm_validate.git
 cd dcm_validate
+```
 
+## Creating a Catalog Table
+
+The included Python script catalog_datasets.py helps identify imaging series that match specific criteria. For instance, you can list properties such as Manufacturer, BodyPart, PatientAge, and EchoTime for each series. Since there are many available properties, the script is designed to be run twice: the first run generates a catalog_fields.txt file listing all possible properties. You can then edit this file to retain only the fields of interest. Re-running the script will generate a table saved as a comma-separated values (CSV) file. To reset and list all properties again, simply delete the catalog_fields.txt file.
+
+```bash
+python catalog_datasets.py
+# Generating field list file: catalog_fields.txt
+# Edit the field list and re-run this script, or use --fields option.
+python catalog_datasets.py
 ```
 
 ## Catalog
