@@ -9,9 +9,7 @@ The `dcm_validate` repository serves as a centralized collection of all `dcm_qa`
 To clone this repository and initialize all submodules, use the following commands:
 
 ```bash
-git clone https://github.com/neurolabusc/dcm_validate.git
-cd dcm_validate
-git submodule update --init --recursive
+git clone --recursive https://github.com/neurolabusc/dcm_validate.git
 ```
 
 ## Creating a Catalog Table for DICOM series
