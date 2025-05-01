@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15310657.svg)](https://doi.org/10.5281/zenodo.15310657)
+
 # dcm_validate
 
 The `dcm_validate` repository serves as a centralized collection of all `dcm_qa` repositories. Each `dcm_qa` repository provides concise, illustrative examples of specific DICOM image file features. This repository acts as an index, bringing together these independent modules for easier access and management.
@@ -7,9 +9,9 @@ The `dcm_validate` repository serves as a centralized collection of all `dcm_qa`
 To clone this repository and initialize all submodules, use the following commands:
 
 ```bash
-git submodule update --init --recursive
-git clone git@github.com:neurolabusc/dcm_validate.git
+git clone https://github.com/neurolabusc/dcm_validate.git
 cd dcm_validate
+git submodule update --init --recursive
 ```
 
 ## Creating a Catalog Table for DICOM series
@@ -78,4 +80,6 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_xa30`](https://github.com/neurolabusc/dcm_qa_xa30)                 | S              | Siemens XA30 enhanced DICOMs                                              |
 | [`dcm_qa_xa30i`](https://github.com/neurolabusc/dcm_qa_xa30i)               | S              | Siemens XA30 classic (interoperability) DICOM                             |
 
+## Duplicate Archives
 
+The latest version of this repository is stored on [Github](https://github.com/neurolabusc/dcm_validate). For long-term access and reproducibility, persistent snapshots are archived on both [Zenodo](https://doi.org/10.5281/zenodo.15310657) and the [Open Science Framework](https://doi.org/10.17605/OSF.IO/FT49). Please use the `Issues` functionality on Github to suggest enhancements.
