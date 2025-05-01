@@ -12,7 +12,19 @@ git clone git@github.com:neurolabusc/dcm_validate.git
 cd dcm_validate
 ```
 
-## Creating a Catalog Table
+## Creating a Catalog Table for DICOM series
+
+The included Python script catalog_dicoms.py recursively scans a folder for DICOM files and generates a CSV table summarizing the value of a specified DICOM tag. Since a single DICOM series typically consists of multiple files, the script includes only one representative file per series, determined by the SeriesInstanceUID (0020,000E).
+
+Note that some DICOM attributes may vary across files within the same series. This script reports the value from the first file encountered per series. You can modify the script to suit custom requirements, or alternatively use tools like dcmdump or gdcmdump for more advanced queries.
+
+An example usage to list the manufacturer (0008,0070) for each series:
+
+```bash
+python catalog_dicoms.py ./dcm_qa 0008,0070)
+```
+
+## Creating a Catalog Table for BIDS JSON images
 
 The included Python script catalog_datasets.py helps identify imaging series that match specific criteria. For instance, you can list properties such as Manufacturer, BodyPart, PatientAge, and EchoTime for each series. Since there are many available properties, the script is designed to be run twice: the first run generates a catalog_fields.txt file listing all possible properties. You can then edit this file to retain only the fields of interest. Re-running the script will generate a table saved as a comma-separated values (CSV) file. To reset and list all properties again, simply delete the catalog_fields.txt file.
 
