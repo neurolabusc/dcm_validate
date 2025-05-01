@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15310657.svg)](https://doi.org/10.5281/zenodo.15310657)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15310657.svg)](https://doi.org/10.5281/zenodo.15310934)
 
 # dcm_validate
 
@@ -80,4 +80,4 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 
 ## Duplicate Archives
 
-The latest version of this repository is stored on [Github](https://github.com/neurolabusc/dcm_validate). For long-term access and reproducibility, persistent snapshots are archived on both [Zenodo](https://doi.org/10.5281/zenodo.15310657) and the [Open Science Framework](https://doi.org/10.17605/OSF.IO/FT49). Please use the `Issues` functionality on Github to suggest enhancements.
+The latest version of this repository is stored on [Github](https://github.com/neurolabusc/dcm_validate). For long-term access and reproducibility, persistent snapshots are archived on both [Zenodo](https://doi.org/10.5281/zenodo.15310934) and the [Open Science Framework](https://doi.org/10.17605/OSF.IO/FT49). Please use the `Issues` functionality on Github to suggest enhancements.
