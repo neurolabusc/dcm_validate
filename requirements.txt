@@ -1,0 +1,13 @@
+# Python dependencies for dcm_validate catalog exploration
+
+# Core DICOM processing
+pydicom>=2.3.0
+
+# Data exploration tools
+visidata>=2.11           # Terminal-based interactive CSV viewer
+datasette>=0.64.0        # Web-based SQLite browser with search/filter
+sqlite-utils>=3.30       # SQLite database utilities for CSV import
+
+# Optional: Enhanced datasette plugins
+datasette-cluster-map    # Geographic visualization (if lat/lon data present)
+datasette-vega           # Advanced charting capabilities
