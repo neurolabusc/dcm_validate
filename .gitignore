@@ -1,6 +1,4 @@
 # Generated catalog files
-# Store catalogs in the 'catalogs' branch, not main
-catalogs/
 
 # Python cache
 __pycache__/
