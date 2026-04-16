@@ -86,6 +86,22 @@ def discover_datasets(root_dir="."):
     return datasets
 
 
+def check_submodules_initialized(datasets):
+    """Check if dataset directories are empty (uninitialized submodules)."""
+    empty_datasets = []
+
+    for dataset in datasets:
+        # Check if directory is empty or has no substantial content
+        contents = list(dataset.iterdir())
+        # Filter out hidden files like .git
+        visible_contents = [f for f in contents if not f.name.startswith('.')]
+
+        if len(visible_contents) == 0:
+            empty_datasets.append(dataset.name)
+
+    return empty_datasets
+
+
 def generate_dataset_catalog(dataset_dir, output_dir, args):
     """Generate catalog for a single dataset."""
     dataset_name = dataset_dir.name
@@ -177,6 +193,19 @@ def main():
 
     if not datasets:
         print("No dcm_qa* directories found in current directory.", file=sys.stderr)
+        sys.exit(1)
+
+    # Check for uninitialized submodules
+    empty_datasets = check_submodules_initialized(datasets)
+    if empty_datasets:
+        print("Error: The following dataset directories are empty (uninitialized git submodules):",
+              file=sys.stderr)
+        for ds in empty_datasets:
+            print(f"  - {ds}", file=sys.stderr)
+        print("\nTo initialize submodules, run:", file=sys.stderr)
+        print("  git submodule update --init --recursive", file=sys.stderr)
+        print("\nOr clone with submodules initialized:", file=sys.stderr)
+        print("  git clone --recursive <repository-url>", file=sys.stderr)
         sys.exit(1)
 
     print(f"Found {len(datasets)} datasets to catalog:")
