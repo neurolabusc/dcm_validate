@@ -102,11 +102,10 @@ launch_datasette() {
     fi
 
     print_msg "$GREEN" "Launching Datasette web interface..."
-    print_msg "$BLUE" "Opening http://localhost:8001 in your browser"
     print_msg "$BLUE" "Press Ctrl+C to stop the server"
     echo ""
 
-    datasette serve "$DB_FILE" --port 8001 --open
+    datasette serve "$DB_FILE"
 }
 
 # Main menu
