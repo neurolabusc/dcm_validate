@@ -43,6 +43,9 @@
 [submodule "dcm_qa_fmap"]
 	path = dcm_qa_fmap
 	url = git@github.com:neurolabusc/dcm_qa_fmap.git
+[submodule "dcm_qa_frag"]
+	path = dcm_qa_frag
+	url = git@github.com:neurolabusc/dcm_qa_frag.git
 [submodule "dcm_qa_ge"]
 	path = dcm_qa_ge
 	url = git@github.com:neurolabusc/dcm_qa_ge.git

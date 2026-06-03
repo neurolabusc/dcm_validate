@@ -56,6 +56,7 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_dti`](https://github.com/neurolabusc/dcm_qa_dti)                   | S              | Diffusion directions with various slice angulations                       |
 | [`dcm_qa_enh`](https://github.com/neurolabusc/dcm_qa_enh)                   | C, P, S        | Enhanced DICOM                                                            |
 | [`dcm_qa_fmap`](https://github.com/neurolabusc/dcm_qa_fmap)                 | G, S           | Field mapping                                                             |
+| [`dcm_qa_frag`](https://github.com/neurolabusc/dcm_qa_frag)                 | S              | Multi-fragment encapsulated (JPEG Lossless, JPEG2000) DICOMs              |
 | [`dcm_qa_ge`](https://github.com/neurolabusc/dcm_qa_ge)                     | G              | Slice timing, acquisition acceleration                                    |
 | [`dcm_qa_me`](https://github.com/neurolabusc/dcm_qa_me)                     | S              | Multi-echo sequences                                                      |
 | [`dcm_qa_mosaic`](https://github.com/neurolabusc/dcm_qa_mosaic)             | S              | Mosaic images with recommended and deprecated image numbering             |
