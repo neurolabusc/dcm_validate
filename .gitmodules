@@ -112,3 +112,6 @@
 [submodule "dcm_qa_xa60"]
 	path = dcm_qa_xa60
 	url = git@github.com:neurolabusc/dcm_qa_xa60.git
+[submodule "dcm_qa_dixon"]
+	path = dcm_qa_dixon
+	url = git@github.com:neurolabusc/dcm_qa_dixon.git

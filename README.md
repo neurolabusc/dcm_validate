@@ -54,6 +54,7 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_decubitus_ge`](https://github.com/neurolabusc/dcm_qa_decubitus_ge) | G              | Head first decubitus image                                                |
 | [`dcm_qa_deident`](https://github.com/neurolabusc/dcm_qa_deident)           | S              | De-identification method parameters                                       |
 | [`dcm_qa_dti`](https://github.com/neurolabusc/dcm_qa_dti)                   | S              | Diffusion directions with various slice angulations                       |
+| [`dcm_qa_dixon`](https://github.com/neurolabusc/dcm_qa_dixon)               | P              | Philips Dixon water/fat/in-phase/out-of-phase and R12 multi-echo          |
 | [`dcm_qa_enh`](https://github.com/neurolabusc/dcm_qa_enh)                   | C, P, S        | Enhanced DICOM                                                            |
 | [`dcm_qa_fmap`](https://github.com/neurolabusc/dcm_qa_fmap)                 | G, S           | Field mapping                                                             |
 | [`dcm_qa_frag`](https://github.com/neurolabusc/dcm_qa_frag)                 | S              | Multi-fragment encapsulated (JPEG Lossless, JPEG2000) DICOMs              |
