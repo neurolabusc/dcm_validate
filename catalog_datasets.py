@@ -31,6 +31,12 @@ Specify fields directly (bypasses catalog_fields.txt):
 Specify output directory:
     python catalog_datasets.py /path --fields Vendor --out /my/output
 
+Use absolute paths instead of relative:
+    python catalog_datasets.py /path --absolute-paths
+
+Specify custom field list file:
+    python catalog_datasets.py /path --field-file my_fields.txt
+
 =====================
 Output:
 =====================
@@ -52,6 +58,10 @@ def parse_args():
     parser.add_argument("target", nargs="?", default=".", help="Directory to scan (defaults to current)")
     parser.add_argument("--fields", type=str, help="Comma-separated list of fields to extract (bypass field file)")
     parser.add_argument("--out", type=str, help="Directory to save CSV output")
+    parser.add_argument("--field-file", type=str, default="catalog_fields.txt",
+                        help="Path to field list file (default: catalog_fields.txt)")
+    parser.add_argument("--absolute-paths", action="store_true",
+                        help="Use absolute paths instead of relative paths in output")
     return parser.parse_args()
 
 def find_json_files(root):
@@ -79,8 +89,18 @@ def write_field_template(keys, field_file):
         for key in keys:
             f.write(f"{key}\n")
 
-def extract_record(json_path, fields):
-    record = {"Path": str(json_path)}
+def extract_record(json_path, fields, use_absolute=False):
+    # Handle path format based on preference
+    if use_absolute:
+        path_str = str(json_path.resolve())
+    else:
+        try:
+            path_str = str(json_path.relative_to(Path.cwd()))
+        except ValueError:
+            # Fallback to absolute if path is not relative to cwd
+            path_str = str(json_path.resolve())
+
+    record = {"Path": path_str}
     try:
         with open(json_path, 'r') as f:
             data = json.load(f)
@@ -102,7 +122,7 @@ def main():
     args = parse_args()
     root_dir = Path(args.target).resolve()
     out_dir = Path(args.out).resolve() if args.out else Path.cwd()
-    field_file = Path("catalog_fields.txt")
+    field_file = Path(args.field_file)
     output_csv = out_dir / "dcm_qa_catalog.csv"
 
     print(f"Scanning: {root_dir}")
@@ -123,7 +143,7 @@ def main():
         print(f"Using selected fields from {field_file}: {selected_fields}")
 
     print("Generating catalog...")
-    records = [extract_record(j, selected_fields) for j in json_files]
+    records = [extract_record(j, selected_fields, use_absolute=args.absolute_paths) for j in json_files]
     write_csv(records, selected_fields, output_csv)
 
     print(f"Catalog written to: {output_csv}")
