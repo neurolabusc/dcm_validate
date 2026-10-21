@@ -62,15 +62,20 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_me`](https://github.com/neurolabusc/dcm_qa_me)                     | S              | Multi-echo sequences                                                      |
 | [`dcm_qa_mosaic`](https://github.com/neurolabusc/dcm_qa_mosaic)             | S              | Mosaic images with recommended and deprecated image numbering             |
 | [`dcm_qa_mprage`](https://github.com/neurolabusc/dcm_qa_mprage)             | S              | Magnetization Prepared - RApid Gradient Echo sequences                    |
+| [`dcm_qa_mrs`](https://github.com/neurolabusc/dcm_qa_mrs)                 | S              | MR spectroscopy (SVS, MRSI) to NIfTI-MRS                                  |
 | [`dcm_qa_nih`](https://github.com/neurolabusc/dcm_qa_nih)                   | G, S           | Phase encoding polarity                                                   |
+| [`dcm_qa_noRF`](https://github.com/neurolabusc/dcm_qa_noRF)               | S              | RF-off noise volumes split to BIDS `_noRF`                                 |
+| [`dcm_qa_parametermap`](https://github.com/neurolabusc/dcm_qa_parametermap) | -              | Multi-channel DICOM Parametric Maps split by LUT Label (highdicom)        |
 | [`dcm_qa_pdt2`](https://github.com/neurolabusc/dcm_qa_pdt2)                 | S              | Proton-Density and T2-weighted imaging                                    |
 | [`dcm_qa_philips`](https://github.com/neurolabusc/dcm_qa_philips)           | P              | Philips classic and enhanced DICOMs                                       |
 | [`dcm_qa_philips_asl`](https://github.com/neurolabusc/dcm_qa_philips_asl)   | P              | Philips classic DICOM arterial spin labeling                              |
 | [`dcm_qa_philips_asl_enh`](https://github.com/neurolabusc/dcm_qa_philips_asl_enh) | P        | Philips enhanced DICOM arterial spin labeling                             |
 | [`dcm_qa_philips_dwi`](https://github.com/neurolabusc/dcm_qa_philips_dwi)   | P              | Philips diffusion-weighted imaging with unusual volume ordering           |
 | [`dcm_qa_philips_enh`](https://github.com/neurolabusc/dcm_qa_philips_enh)   | P              | Philips enhanced DICOM                                                    |
+| [`dcm_qa_physio`](https://github.com/neurolabusc/dcm_qa_physio)             | S              | Embedded physiological recordings to BIDS TSV                             |
 | [`dcm_qa_polar`](https://github.com/neurolabusc/dcm_qa_polar)               | G              | GE reversed phase encoding polarity                                       |
 | [`dcm_qa_sag`](https://github.com/neurolabusc/dcm_qa_sag)                   | S              | Sagittal diffusion images                                                 |
+| [`dcm_qa_spec`](https://github.com/neurolabusc/dcm_qa_spec)                 | S              | MR spectroscopy (single-voxel) to BIDS                                    |
 | [`dcm_qa_stc`](https://github.com/neurolabusc/dcm_qa_stc)                   | G, S, U        | Slice timing correction                                                   |
 | [`dcm_qa_table`](https://github.com/neurolabusc/dcm_qa_table)               | G, P, S        | Tracking table position                                                   |
 | [`dcm_qa_toshiba`](https://github.com/neurolabusc/dcm_qa_toshiba)           | C              | Toshiba 5.0 classic DICOMs                                                |

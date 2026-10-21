@@ -79,12 +79,18 @@
 [submodule "dcm_qa_philips_enh"]
 	path = dcm_qa_philips_enh
 	url = git@github.com:neurolabusc/dcm_qa_philips_enh.git
+[submodule "dcm_qa_physio"]
+	path = dcm_qa_physio
+	url = git@github.com:neurolabusc/dcm_qa_physio.git
 [submodule "dcm_qa_polar"]
 	path = dcm_qa_polar
 	url = git@github.com:neurolabusc/dcm_qa_polar.git
 [submodule "dcm_qa_sag"]
 	path = dcm_qa_sag
 	url = git@github.com:neurolabusc/dcm_qa_sag.git
+[submodule "dcm_qa_spec"]
+	path = dcm_qa_spec
+	url = git@github.com:neurolabusc/dcm_qa_spec.git
 [submodule "dcm_qa_stc"]
 	path = dcm_qa_stc
 	url = git@github.com:neurolabusc/dcm_qa_stc.git
@@ -115,3 +121,12 @@
 [submodule "dcm_qa_dixon"]
 	path = dcm_qa_dixon
 	url = git@github.com:neurolabusc/dcm_qa_dixon.git
+[submodule "dcm_qa_parametermap"]
+	path = dcm_qa_parametermap
+	url = git@github.com:neurolabusc/dcm_qa_parametermap.git
+[submodule "dcm_qa_mrs"]
+	path = dcm_qa_mrs
+	url = git@github.com:neurolabusc/dcm_qa_mrs.git
+[submodule "dcm_qa_noRF"]
+	path = dcm_qa_noRF
+	url = git@github.com:neurolabusc/dcm_qa_noRF.git
