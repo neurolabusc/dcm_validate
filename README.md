@@ -57,6 +57,7 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_dixon`](https://github.com/neurolabusc/dcm_qa_dixon)               | P              | Philips Dixon water/fat/in-phase/out-of-phase and R12 multi-echo          |
 | [`dcm_qa_enh`](https://github.com/neurolabusc/dcm_qa_enh)                   | C, P, S        | Enhanced DICOM                                                            |
 | [`dcm_qa_enh_compressed`](https://github.com/neurolabusc/dcm_qa_enh_compressed) | C, P   | Enhanced DICOM under JPEG-LS, JPEG 2000, RLE and JPEG lossless transfer syntaxes |
+| [`dcm_qa_ep3d`](https://github.com/neurolabusc/dcm_qa_ep3d)                 | S              | DZNE 3D-EPI volume TR, multi-shot and multi-echo (XA60 enhanced)          |
 | [`dcm_qa_fmap`](https://github.com/neurolabusc/dcm_qa_fmap)                 | G, S           | Field mapping                                                             |
 | [`dcm_qa_frag`](https://github.com/neurolabusc/dcm_qa_frag)                 | S              | Multi-fragment encapsulated (JPEG Lossless, JPEG2000) DICOMs              |
 | [`dcm_qa_ge`](https://github.com/neurolabusc/dcm_qa_ge)                     | G              | Slice timing, acquisition acceleration                                    |
