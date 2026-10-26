@@ -136,3 +136,6 @@
 [submodule "dcm_qa_ep3d"]
 	path = dcm_qa_ep3d
 	url = git@github.com:neurolabusc/dcm_qa_ep3d.git
+[submodule "dcm_qa_jpg"]
+	path = dcm_qa_jpg
+	url = git@github.com:neurolabusc/dcm_qa_jpg.git

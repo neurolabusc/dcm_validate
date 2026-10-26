@@ -61,6 +61,7 @@ Below is a comprehensive list of the included repositories. The Manufacturer ref
 | [`dcm_qa_fmap`](https://github.com/neurolabusc/dcm_qa_fmap)                 | G, S           | Field mapping                                                             |
 | [`dcm_qa_frag`](https://github.com/neurolabusc/dcm_qa_frag)                 | S              | Multi-fragment encapsulated (JPEG Lossless, JPEG2000) DICOMs              |
 | [`dcm_qa_ge`](https://github.com/neurolabusc/dcm_qa_ge)                     | G              | Slice timing, acquisition acceleration                                    |
+| [`dcm_qa_jpg`](https://github.com/neurolabusc/dcm_qa_jpg)                   | -              | JPEG Lossless SOF3 component identifiers other than 1..N (issue 1054)     |
 | [`dcm_qa_me`](https://github.com/neurolabusc/dcm_qa_me)                     | S              | Multi-echo sequences                                                      |
 | [`dcm_qa_mosaic`](https://github.com/neurolabusc/dcm_qa_mosaic)             | S              | Mosaic images with recommended and deprecated image numbering             |
 | [`dcm_qa_mprage`](https://github.com/neurolabusc/dcm_qa_mprage)             | S              | Magnetization Prepared - RApid Gradient Echo sequences                    |
