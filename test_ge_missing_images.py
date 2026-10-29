@@ -14,9 +14,9 @@ images.sort(key=lambda d: int(d.InstanceNumber))
 assert len(images) == 63
 
 cases = [
-    ('both', 23, 'expected 63 slices with 9 spatial positions but found 23.'),
-    ('total', 23, 'expected 63 slices but found 23.'),
-    ('total_volumes', 54, 'expected 63 slices but found 54.'),
+    ('both', 23, 'expected 63 images (9 spatial positions per volume) but found 23.'),
+    ('total', 23, 'expected 63 images but found 23.'),
+    ('total_volumes', 54, 'expected 63 images but found 54.'),
     ('spatial', 23, 'expected 9 spatial positions per volume but found 23 slices.'),
     ('zip', 17, 'expected 18 spatial positions per volume but found 17 slices.'),
     ('complete', 63, None),
