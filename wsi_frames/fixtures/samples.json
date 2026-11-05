@@ -1,0 +1,153 @@
+{
+ "j2k_mono8": {
+  "file": "j2k_mono8.j2k",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 8,
+  "samplesSha256": "3c970c08e03b1a915ed603f2151daa068a74558cfb69f37b5edfdb698f7cd166",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "jls_mono8": {
+  "file": "jls_mono8.jls",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 8,
+  "samplesSha256": "3c970c08e03b1a915ed603f2151daa068a74558cfb69f37b5edfdb698f7cd166",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "j2k_mono12": {
+  "file": "j2k_mono12.j2k",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 12,
+  "samplesSha256": "c716a9516a4d0bd8da28d34aee2f9b3dec4a48e12f1c8fca06966afdd9f07e7e",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "jls_mono12": {
+  "file": "jls_mono12.jls",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 12,
+  "samplesSha256": "c716a9516a4d0bd8da28d34aee2f9b3dec4a48e12f1c8fca06966afdd9f07e7e",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "j2k_mono16": {
+  "file": "j2k_mono16.j2k",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 16,
+  "samplesSha256": "84bb80d18f822ce39f830c9d757095ff0ba55d9be0b6b035d78425f392fc1d6a",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "jls_mono16": {
+  "file": "jls_mono16.jls",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 16,
+  "samplesSha256": "84bb80d18f822ce39f830c9d757095ff0ba55d9be0b6b035d78425f392fc1d6a",
+  "rgbaSha256": "2f7a7e427ea2d46179667638e378a333d83bf131a2f6e0f6256ed28983e9c4c7"
+ },
+ "j2k_mono12_m1": {
+  "file": "j2k_mono12.j2k",
+  "photometric": "MONOCHROME1",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 12,
+  "samplesSha256": "c716a9516a4d0bd8da28d34aee2f9b3dec4a48e12f1c8fca06966afdd9f07e7e",
+  "rgbaSha256": "12b2bb9cda8b3dcf0be1bffd8a16693935c820a69fff63dd279c403d02001a35"
+ },
+ "jls_mono16_m1": {
+  "file": "jls_mono16.jls",
+  "photometric": "MONOCHROME1",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 16,
+  "samplesSha256": "84bb80d18f822ce39f830c9d757095ff0ba55d9be0b6b035d78425f392fc1d6a",
+  "rgbaSha256": "12b2bb9cda8b3dcf0be1bffd8a16693935c820a69fff63dd279c403d02001a35"
+ },
+ "j2k_rgb16": {
+  "file": "j2k_rgb16.j2k",
+  "photometric": "RGB",
+  "width": 67,
+  "height": 45,
+  "components": 3,
+  "bitsStored": 16,
+  "samplesSha256": "71a1bf6f697117ec673d79e07b60883ec556e45d2eb61a7c91ce718e0bbd6a27",
+  "rgbaSha256": "9b556cde9b032e20597532fd3d016b818015c90229113843edb1dee75f555402"
+ },
+ "jls_rgb16_line": {
+  "file": "jls_rgb16_line.jls",
+  "photometric": "RGB",
+  "width": 67,
+  "height": 45,
+  "components": 3,
+  "bitsStored": 16,
+  "samplesSha256": "71a1bf6f697117ec673d79e07b60883ec556e45d2eb61a7c91ce718e0bbd6a27",
+  "rgbaSha256": "9b556cde9b032e20597532fd3d016b818015c90229113843edb1dee75f555402"
+ },
+ "jls_rgb12_planar": {
+  "file": "jls_rgb12_planar.jls",
+  "photometric": "RGB",
+  "width": 67,
+  "height": 45,
+  "components": 3,
+  "bitsStored": 12,
+  "samplesSha256": "60a296cf58039274ff00d0e52d12087a30e0fff93ee03fc401232d5f47cef7e5",
+  "rgbaSha256": "ce01db98685c83c539f93444e79f105103c923d0b793a67f1f59e1b708d98930"
+ },
+ "jls_rgb8_sample": {
+  "file": "jls_rgb8_sample.jls",
+  "photometric": "RGB",
+  "width": 67,
+  "height": 45,
+  "components": 3,
+  "bitsStored": 8,
+  "samplesSha256": "6b443433a152e5f26afa5a49bfb58e56d541e7e58e53ac05d02eacbc94c0fc26",
+  "rgbaSha256": "4a9e2847f1b529799aa888fab98f154f8e3a76053b17dc49bf64d5ea88807dfa"
+ },
+ "jls_ybr8_sample": {
+  "file": "jls_rgb8_sample.jls",
+  "photometric": "YBR_FULL",
+  "width": 67,
+  "height": 45,
+  "components": 3,
+  "bitsStored": 8,
+  "samplesSha256": "0ef0fcb4930d2bfd29d52e697e827c493358185b55137e31d3dd0ae28237cb06",
+  "rgbaSha256": "6708cd3fff9d7897c888034751690f1606ec39a2d8c29da1ecb59d5bb7d4a587"
+ },
+ "jls_mono12_near": {
+  "file": "jls_mono12_near.jls",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 12,
+  "near": 2,
+  "source": "jls_mono12_near.src",
+  "samplesSha256": "fb1623ffc0e954a3d3df4bae3487b676d2a0d70b170e2eb6cad41e3180a3ee66",
+  "rgbaSha256": "e46bc01c011ddf4a2e0ea0f231eecc68e9ea066539c82ee1315694070b7b8248"
+ },
+ "j2k_signed16": {
+  "file": "j2k_signed16.j2k",
+  "photometric": "MONOCHROME2",
+  "width": 67,
+  "height": 45,
+  "components": 1,
+  "bitsStored": 16,
+  "status": "unsupported-signed"
+ }
+}
