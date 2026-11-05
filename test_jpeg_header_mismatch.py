@@ -22,6 +22,16 @@ def mosaic_frames(d):
     d.PixelData = encapsulate([frame] * 3, has_bot=False)
 
 
+def j2k_siz_wrap(d):
+    # crafted codestream height: bytes-per-sample x width x height x components wraps a 32-bit int,
+    # which overflowed imagetoimg's buffer; the size check now runs before the decode
+    cs = bytearray(next(generate_frames(d.PixelData, number_of_frames=1)))
+    i = cs.index(b'\xff\x51')  # image-size marker: Xsiz at +6, Ysiz at +10, Csiz at +38, first Ssiz at +40
+    width, ncomp, bps = int.from_bytes(cs[i + 6:i + 10], 'big'), int.from_bytes(cs[i + 38:i + 40], 'big'), ((cs[i + 40] & 0x7F) + 8) // 8
+    cs[i + 10:i + 14] = ((1 << 32) // (bps * width * ncomp) + 1).to_bytes(4, 'big')
+    d.PixelData = encapsulate([bytes(cs)], has_bot=False)
+
+
 root = Path(__file__).parent
 cases = [
     # (name, source, edits, path exercised)
@@ -32,6 +42,7 @@ cases = [
     ('c3_fragments', 'dcm_qa_jpg/In/dcmtk_fragments_fmap/0001_1.3.12.2.1107.5.2.43.67093.2022071112105821698004979.dcm', {'Rows': 65}, 'JPEG lossless multi-frame, several items per frame'),
     ('j2k_single', 'dcm_qa_ts/In/9.dcm', {'Rows': 385}, 'JPEG 2000 single frame'),
     ('j2k_frames', 'dcm_qa_enh_compressed/In/j2k/philips_asl.dcm', {'Rows': 81}, 'JPEG 2000 multi-frame loop'),
+    ('j2k_siz_wrap', 'dcm_qa_ts/In/9.dcm', j2k_siz_wrap, 'JPEG 2000 codestream size wraps 32 bits, refused before decoding'),
     ('jls_single', 'dcm_qa_ts/In/8.dcm', {'Rows': 385}, 'JPEG-LS single frame'),
     ('jls_frames', 'dcm_qa_enh_compressed/In/jpegls/philips_asl.dcm', {'Rows': 81}, 'JPEG-LS multi-frame loop'),
     ('j2k_one_codestream', 'dcm_qa_enh_compressed/In/j2k/philips_asl.dcm', first_frame_only, 'JPEG 2000 multi-frame header, one codestream'),
