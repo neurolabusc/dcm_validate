@@ -10,8 +10,8 @@ Regression harness for dcm2niix's DICOM-WSI tile decoders, `nii_decodeFrameRGBA`
 
 ```bash
 D=../../dcm2niix/console O=$(brew --prefix openjpeg)
-CHARLS="$D/charls/jpegls.cpp $D/charls/jpegmarkersegment.cpp $D/charls/interface.cpp $D/charls/jpegstreamwriter.cpp $D/charls/jpegstreamreader.cpp"
-c++ -O2 -ffp-contract=off -std=c++14 -DUSE_OPENJPEG -DmyEnableJPEGLS -I$D -I$O/include/openjpeg-2.5 decode_frames.cpp $D/nii_dicom.cpp $D/jpg_0XC3.cpp $D/ujpeg.cpp $D/nifti1_io_core.cpp $D/dicom_fragments.cpp $CHARLS -L$O/lib -lopenjp2 -lz -o decode_frames
+CHARLS="$D/charls/jpegls.cpp $D/charls/charls_jpegls_decoder.cpp $D/charls/jpeg_stream_reader.cpp $D/charls/jpegls_error.cpp"  # CharLS 2.4.5
+c++ -O2 -ffp-contract=off -std=c++14 -DUSE_OPENJPEG -DmyEnableJPEGLS -DCHARLS_STATIC -I$D -I$O/include/openjpeg-2.5 decode_frames.cpp $D/nii_dicom.cpp $D/jpg_0XC3.cpp $D/ujpeg.cpp $D/nifti1_io_core.cpp $D/dicom_fragments.cpp $CHARLS -L$O/lib -lopenjp2 -lz -o decode_frames
 cc -O2 -I$O/include/openjpeg-2.5 dump_components.c -L$O/lib -lopenjp2 -o dump_components
 c++ -O2 -std=c++14 -DCHARLS_NO_DEPRECATED_WARNING encode_jls.cpp $(pkg-config --cflags --libs charls) -o encode_jls  # use the installed CharLS encoder
 ```
